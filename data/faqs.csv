@@ -1,42 +1,57 @@
-id,question,answer,category
-1,"What are your membership plans?","We offer 3 plans: Basic (₹999/month), Premium (₹1,499/month), and Elite (₹1,999/month). Basic includes gym access, Premium adds classes, Elite includes personal training.","Membership"
-2,"Do you offer annual memberships?","Yes! Annual membership is ₹10,999 (saves ₹1,000), Annual Premium is ₹16,999, and Annual Elite is ₹21,999.","Membership"
-3,"Is there a registration fee?","Yes, there's a one-time registration fee of ₹500. This includes fitness assessment and orientation.","Membership"
-4,"Can I freeze my membership?","Yes, you can freeze for up to 3 months per year at no additional cost. Just notify us 7 days in advance.","Membership"
-5,"What is your cancellation policy?","You can cancel anytime without penalty for monthly plans. Annual plans have a 15-day notice period. Full refund if cancelled within 30 days.","Membership"
-6,"What are your gym timings?","We're open 5 AM to 11 PM, Monday to Sunday, including holidays. Guided classes run from 6-9 AM and 4-8 PM.","Timings"
-7,"Are you open on weekends and holidays?","Yes! We're open on all weekends and national holidays with same timings (5 AM - 11 PM).","Timings"
-8,"Can I access the gym 24/7?","No, but Elite members get access until 11 PM (latest). We offer 24/7 access only upon special request for ₹500 extra/month.","Timings"
-9,"What equipment do you have?","We have cardio machines (treadmills, ellipticals, bikes), free weights (dumbbells up to 50kg), cable machines, squat racks, and functional training area.","Facilities"
-10,"Do you have locker facilities?","Yes, we provide free lockers for all members. Bring your own lock or rent one for ₹50/month.","Facilities"
-11,"Is there a shower and changing room?","Yes! All members have access to clean shower rooms, changing areas, and complimentary towels.","Facilities"
-12,"Do you have a sauna or steam room?","We have a steam room available for Premium and Elite members only. Basic members can use it for ₹100/visit.","Facilities"
-13,"What is your parking facility?","Free parking available for all members in our basement. We have 50 spaces with CCTV security.","Facilities"
-14,"What group classes do you offer?","We offer Yoga, Zumba, CrossFit, Spinning, Pilates, and HIIT. Each class is 45-60 minutes with experienced instructors.","Classes"
-15,"Are group classes included in membership?","Yes! Basic plan includes 2 free classes per week. Premium includes unlimited classes. Elite includes private sessions too.","Classes"
-16,"Do you offer personal training?","Yes! Personal training sessions cost ₹500 per session or ₹4,500 for 10 sessions. Elite members get 2 free sessions per month.","Classes"
-17,"How do I book group classes?","Book through our mobile app or at reception up to 24 hours in advance. Walk-ins are welcome if space available.","Classes"
-18,"Can I try a free trial class?","Yes! New members can attend 1 free trial class before joining. Email us or call to schedule your trial.","Classes"
-19,"What payment methods do you accept?","We accept Cash, Debit/Credit Card, UPI, and net banking. All payments processed securely.","Payment"
-20,"Can I pay in installments?","Yes! Annual memberships can be paid in 3 or 12 monthly installments with 0% interest.","Payment"
-21,"How will I receive billing invoices?","Invoices are emailed automatically at the start of each billing cycle. You can also download from app.","Payment"
-22,"Do you offer corporate memberships?","Yes! Corporate members get 20% discount for 10+ employees. Separate billing with admin dashboard.","Payment"
-23,"How often is the gym cleaned?","We clean equipment and floors every 2 hours. Deep cleaning happens daily at 11 PM. All equipment sanitized with hospital-grade disinfectant.","Hygiene"
-24,"What COVID-19 safety measures do you have?","Masks optional. Regular sanitization every 2 hours. Social distancing maintained in classes. Hand sanitizers available throughout gym.","Hygiene"
-25,"Do you have a hygiene guarantee?","100% equipment hygiene guaranteed. Report any uncleaned equipment and get ₹50 gym credit.","Hygiene"
-26,"Is your gym insured?","Yes, we have comprehensive liability insurance. Your safety is our priority with trained first-aid staff on-site.","Safety"
-27,"Can I bring a guest to the gym?","Yes! All members get 2 free guest passes per month. Guest must be accompanied by member at all times.","Policies"
-28,"Is there a dress code?","Wear comfortable workout clothes and proper gym shoes. No outdoor clothes or formal wear on gym floor.","Policies"
-29,"What are your behavior policies?","Be respectful to all members and staff. No loud music/noise. Proper equipment usage required. Violation = membership cancellation.","Policies"
-30,"Do you offer nutrition guidance?","Yes! Premium and Elite members get monthly nutrition consultation. Others can book for ₹500/session.","Services"
-31,"Do you have a merchandise shop?","Yes, we sell gym wear, supplements, and accessories at competitive prices with member discounts (10-20%).","Services"
-32,"Can I get a fitness assessment?","Yes! Included in registration for all members. Reassessment available every 3 months for ₹200.","Services"
-33,"How many members do you have?","We have 2,500+ active members. Join our growing fitness community!","General"
-34,"Do you have morning/evening batch timings?","Yes! Separate morning (5-9 AM) and evening (4-8 PM) batches for classes with different instructors.","Timings"
-35,"Can I transfer my membership to someone else?","No, memberships are non-transferable. However, you can gift a new membership.","Membership"
-36,"Do you have special programs for seniors/kids?","Yes, we have senior fitness programs (₹799/month) and kids training (ages 8-16) for ₹599/month.","Programs"
-37,"What should I bring on my first day?","Bring your ID proof, workout clothes, shoes, water bottle, and towel.","General"
-38,"Do you provide water bottles/towels?","Towels are complimentary. Reusable water bottles available at ₹200 or bring your own.","Facilities"
-39,"How long is a typical workout session?","Most members workout 45-90 minutes. No time limit - stay as long as you like during operating hours.","General"
-40,"Can I get a refund if I'm not satisfied?","Yes, 100% refund within 30 days if unsatisfied, no questions asked.","Payment"
-41,"Do you have changing room lockers with cameras?","No cameras in changing rooms for privacy. Lockers are monitored by CCTV outside.","Policies"
+id,question,answer,category,keywords
+1,Hi,Hello! 👋 Welcome to Gym FAQ Chatbot! I'm here to help you with any questions about our gym. What would you like to know?,Greeting,hi hey hello greeting welcome
+2,Hello,"Hey there! 👋 Welcome! I'm your Gym FAQ Assistant. Ask me anything about memberships, classes, facilities, and more!",Greeting,hello hey greeting welcome
+3,Hey,Hey! 👊 Great to see you! I'm here to answer all your gym-related questions. What can I help you with today?,Greeting,hey greeting hello
+4,What's your name?,I'm your Gym FAQ Assistant! 🤖 I'm here 24/7 to help answer your questions about our gym. Nice to meet you!,Greeting,name bot assistant identity who
+5,Who are you?,"I'm an AI chatbot here to help you learn about our gym! Ask me about memberships, classes, facilities, timings, or anything gym-related.",Greeting,who bot assistant identity about
+6,Hey mate,"Hey mate! 🤖 Welcome! Let me tell you about our awesome gym! We're FitZone Gym - a premium fitness center with 2,500+ active members, 15 expert trainers, and state-of-the-art equipment. We're open 5 AM to 11 PM daily. Peak hours are 6-9 AM (morning rush) and 6-8 PM (evening rush). We offer 3 membership plans: Basic ₹999/month, Premium ₹1,499/month, Elite ₹1,999/month. All members get free locker, shower, towel, and parking. What else would you like to know?",About,hey mate about gym overview info details
+7,Tell me about the gym,"Welcome to FitZone Gym! 💪 Here's the complete info: **Members:** 2,500+ active members | **Trainers:** 15 certified fitness experts | **Timings:** 5 AM - 11 PM (everyday, including holidays) | **Peak Hours:** 6-9 AM & 6-8 PM | **Memberships:** Basic (₹999), Premium (₹1,499), Elite (₹1,999) | **Facilities:** Cardio machines, free weights (up to 50kg), cable machines, squat racks, yoga area, steam room, shower, lockers, parking. Want more details about anything?",About,about gym overview details information
+8,About the gym,"Great question! Here's our gym overview: 🏋️ **FitZone Gym** - Your Complete Fitness Destination | **Community:** 2,500+ members strong! | **Expert Team:** 15 professional trainers ready to help | **Operating Hours:** 5 AM to 11 PM, 7 days a week | **Busiest Times:** 6-9 AM (morning workout rush) & 6-8 PM (evening crowd) | **Membership Options:** 3 affordable plans starting at ₹999/month | **World-Class Facilities:** Full equipment, classes, steam room, shower rooms, free parking & lockers | Join our fitness family today! Any specific questions?",About,about gym overview details
+9,What about your gym?,"Awesome question! Here's what makes us special: 🌟 **Total Members:** 2,500+ fitness enthusiasts | **Professional Trainers:** 15 certified experts | **Open:** 5 AM to 11 PM daily (never closed!) | **Peak Times:** Early morning (6-9 AM) and evening (6-8 PM) are busiest | **Pricing:** Basic ₹999/mo | Premium ₹1,499/mo | Elite ₹1,999/mo | **What We Offer:** Full gym equipment, Yoga/Zumba/CrossFit/HIIT classes, Personal training, Nutrition guidance, Steam room, Shower facilities, Free parking, Gym merchandise | We're here to help you achieve your fitness goals! What do you want to know more about?",About,about gym overview details
+10,Gym details,"Here's everything you need to know about FitZone Gym: 📋 **Membership:** 2,500+ active members | **Staff:** 15 certified fitness trainers | **Hours:** 5 AM - 11 PM (Open everyday) | **Peak Hours:** Morning peak: 6-9 AM | Evening peak: 6-8 PM | **Membership Plans:** Basic ₹999/month (gym access) | Premium ₹1,499/month (gym + classes) | Elite ₹1,999/month (gym + classes + personal training) | **Facilities:** Treadmills, bikes, dumbbells, cable machines, squat racks, yoga area, steam room, shower, locker, parking | **Classes:** Yoga, Zumba, CrossFit, Spinning, Pilates, HIIT. Choose us and join our fitness community!",About,gym details about overview information
+11,How many members?,"We have 2,500+ active members at FitZone Gym! 💪 We're a thriving fitness community with people of all ages and fitness levels. From beginners to advanced athletes, everyone finds their place here. Join us and be part of our amazing family!",About,members count community size strength
+12,How many trainers?,"We have 15 certified and experienced fitness trainers! 🏋️ Each trainer is specialized in different areas like strength training, weight loss, muscle building, yoga, and rehabilitation. They're here to guide you 24/7 during operating hours. Personal training sessions are available for all membership levels!",About,trainers count staff coaches experts
+13,Peak timing?,"Our peak hours are: ⏰ **Morning Peak:** 6 AM - 9 AM (Very busy - lots of early risers!) | **Evening Peak:** 6 PM - 8 PM (Busiest time - everyone after work!) | **Off-Peak Hours:** 10 AM - 5 PM (Less crowded, great for focused workouts!) | **Late Evening:** 8 PM - 11 PM (Moderate crowd) | Choose off-peak hours for a more relaxed workout experience!",Timings,peak busy timing crowd rush
+14,When is gym busiest?,The gym is busiest during: 🔥 **6 AM - 9 AM:** Morning crew! Everyone starts their day at the gym. | **6 PM - 8 PM:** The biggest rush! Everyone comes after office/college. | **Quietest Times:** 10 AM - 5 PM (Afternoon is your friend if you prefer less crowd!) | **Tip:** Come during off-peak hours for better equipment access and shorter wait times. Elite members can also access extra hours!,Timings,busiest busy timing crowd rush peak
+15,What are your membership plans?,"We offer 3 plans: Basic (₹999/month), Premium (₹1,499/month), and Elite (₹1,999/month). Basic includes gym access, Premium adds classes, Elite includes personal training.",Membership,membership plans packages pricing options option cheap
+16,Do you offer annual memberships?,"Yes! Annual membership is ₹10,999 (saves ₹1,000), Annual Premium is ₹16,999, and Annual Elite is ₹21,999.",Membership,annual yearly membership plan
+17,Is there a registration fee?,"Yes, there's a one-time registration fee of ₹500. This includes fitness assessment and orientation.",Membership,registration fee joining charges signup
+18,Can I freeze my membership?,"Yes, you can freeze for up to 3 months per year at no additional cost. Just notify us 7 days in advance.",Membership,freeze pause hold membership suspend
+19,What is your cancellation policy?,You can cancel anytime without penalty for monthly plans. Annual plans have a 15-day notice period. Full refund if cancelled within 30 days.,Membership,cancel cancellation membership quit policy refund
+20,What are your gym timings?,"We're open 5 AM to 11 PM, Monday to Sunday, including holidays. Guided classes run from 6-9 AM and 4-8 PM.",Timings,timing hours open close schedule
+21,Are you open on weekends and holidays?,Yes! We're open on all weekends and national holidays with same timings (5 AM - 11 PM).,Timings,weekend holiday open timing
+22,Can I access the gym 24/7?,"No, but Elite members get access until 11 PM (latest). We offer 24/7 access only upon special request for ₹500 extra/month.",Timings,247 24/7 access night late timing
+23,What equipment do you have?,"We have cardio machines (treadmills, ellipticals, bikes), free weights (dumbbells up to 50kg), cable machines, squat racks, and functional training area.",Facilities,equipment treadmill cardio bike cable machine dumbbell squat rack weights
+24,Do you have locker facilities?,"Yes, we provide free lockers for all members. Bring your own lock or rent one for ₹50/month.",Facilities,locker storage facility lock
+25,Is there a shower and changing room?,"Yes! All members have access to clean shower rooms, changing areas, and complimentary towels.",Facilities,shower changing room towel
+26,Do you have a sauna or steam room?,We have a steam room available for Premium and Elite members only. Basic members can use it for ₹100/visit.,Facilities,sauna steam room
+27,What is your parking facility?,Free parking available for all members in our basement. We have 50 spaces with CCTV security.,Facilities,parking facility car bike
+28,What group classes do you offer?,"We offer Yoga, Zumba, CrossFit, Spinning, Pilates, and HIIT. Each class is 45-60 minutes with experienced instructors.",Classes,group classes yoga zumba crossfit spinning pilates hiit
+29,Are group classes included in membership?,Yes! Basic plan includes 2 free classes per week. Premium includes unlimited classes. Elite includes private sessions too.,Classes,classes membership included free group
+30,Do you offer personal training?,"Yes! Personal training sessions cost ₹500 per session or ₹4,500 for 10 sessions. Elite members get 2 free sessions per month.",Classes,personal training trainer one on one pt
+31,How do I book group classes?,Book through our mobile app or at reception up to 24 hours in advance. Walk-ins are welcome if space available.,Classes,book booking classes schedule reservation
+32,Can I try a free trial class?,Yes! New members can attend 1 free trial class before joining. Email us or call to schedule your trial.,Classes,trial free class try
+33,What payment methods do you accept?,"We accept Cash, Debit/Credit Card, UPI, and net banking. All payments processed securely.",Payment,payment methods card cash upi net banking
+34,Can I pay in installments?,Yes! Annual memberships can be paid in 3 or 12 monthly installments with 0% interest.,Payment,installment emi pay monthly
+35,How will I receive billing invoices?,Invoices are emailed automatically at the start of each billing cycle. You can also download from app.,Payment,invoice bill billing receipt email
+36,Do you offer corporate memberships?,Yes! Corporate members get 20% discount for 10+ employees. Separate billing with admin dashboard.,Payment,corporate company business membership discount
+37,How often is the gym cleaned?,We clean equipment and floors every 2 hours. Deep cleaning happens daily at 11 PM. All equipment sanitized with hospital-grade disinfectant.,Hygiene,clean cleaning hygiene sanitize
+38,What COVID-19 safety measures do you have?,Masks optional. Regular sanitization every 2 hours. Social distancing maintained in classes. Hand sanitizers available throughout gym.,Hygiene,covid corona safety sanitization mask distancing
+39,Do you have a hygiene guarantee?,100% equipment hygiene guaranteed. Report any uncleaned equipment and get ₹50 gym credit.,Hygiene,hygiene guarantee clean
+40,Is your gym insured?,"Yes, we have comprehensive liability insurance. Your safety is our priority with trained first-aid staff on-site.",Safety,insurance insured safety first aid
+41,Can I bring a guest to the gym?,Yes! All members get 2 free guest passes per month. Guest must be accompanied by member at all times.,Policies,guest pass bring visitor friend
+42,Is there a dress code?,Wear comfortable workout clothes and proper gym shoes. No outdoor clothes or formal wear on gym floor.,Policies,dress code clothing wear shoes
+43,What are your behavior policies?,Be respectful to all members and staff. No loud music/noise. Proper equipment usage required. Violation = membership cancellation.,Policies,behavior policy noise music rules respect
+44,Do you offer nutrition guidance?,Yes! Premium and Elite members get monthly nutrition consultation. Others can book for ₹500/session.,Services,nutrition diet guidance consultation meal weight loss lose fat
+45,Do you have a merchandise shop?,"Yes, we sell gym wear, supplements, and accessories at competitive prices with member discounts (10-20%).",Services,merchandise shop supplements protein accessories discount
+46,Can I get a fitness assessment?,Yes! Included in registration for all members. Reassessment available every 3 months for ₹200.,Services,fitness assessment body composition test
+47,How much does gym cost?,"Our basic plan is ₹999/month, premium is ₹1,499/month, and elite is ₹1,999/month. Pick what suits your budget!",Membership,cost price fees charge rate amount
+48,Is gym open today?,"Yes, we're open every day from 5 AM to 11 PM, even on weekends and holidays!",Timings,open today timing
+49,Can I bring my friend?,Yes! You get 2 free guest passes per month. Just bring your friend along with you.,Policies,friend guest bring pass visitor
+50,Do I need to pay extra for classes?,No! Premium and Elite members get free classes. Basic members get 2 free classes per week.,Classes,classes extra pay free included
+51,How do I join the gym?,Just come visit us with your ID and we'll register you on the spot. Registration fee is only ₹500.,Membership,join register membership signup
+52,Is there a trial class?,Yes! You can try 1 free class before joining. Email us or call to book your trial.,Classes,trial class free try
+53,Can I quit anytime?,Yes! Monthly plans - quit anytime. Annual plans - need 15 days notice. 100% refund in first 30 days.,Membership,quit cancel anytime leave
+54,Do you provide equipment?,"Yes! We have treadmills, bikes, weights, dumbbells up to 50kg, and everything you need to workout.",Facilities,equipment provide gear treadmill weights dumbbell
+55,Is there a shower?,"Yes! Free shower rooms, changing areas, and complimentary towels for all members.",Facilities,shower changing towel washroom
+56,Can I get my money back?,Yes! 100% refund if you're not satisfied within 30 days. No questions asked!,Payment,refund money back cancel
