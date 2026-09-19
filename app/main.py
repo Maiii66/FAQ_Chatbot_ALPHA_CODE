@@ -6,18 +6,20 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.chatbot import FAQChatbot
-from config.settings import FAQ_FILE, SIMILARITY_THRESHOLD
+from config.settings import FAQ_FILE, PORT, DEBUG, VERBOSE, MAX_RESULTS, SIMILARITY_THRESHOLD
 
 # Initialize Flask app
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
 # Initialize chatbot (runs once when app starts)
-print("\n" + "="*60)
-print("🚀 INITIALIZING GYM FAQ CHATBOT")
-print("="*60)
+if VERBOSE:
+    print("\n" + "="*60)
+    print("🚀 INITIALIZING GYM FAQ CHATBOT")
+    print("="*60)
 chatbot = FAQChatbot(FAQ_FILE)
-print("✅ Flask app ready! Visit http://localhost:5000")
-print("="*60 + "\n")
+print(f"✅ Flask app ready! Visit http://localhost:{PORT}")
+if VERBOSE:
+    print("="*60 + "\n")
 
 
 @app.route('/')
@@ -51,7 +53,7 @@ def chat():
             }), 400
         
         # Get chatbot response
-        response = chatbot.get_response(user_message, threshold=SIMILARITY_THRESHOLD)
+        response = chatbot.get_response(user_message, top_k=MAX_RESULTS, threshold=SIMILARITY_THRESHOLD)
         
         return jsonify(response), 200
     
@@ -78,10 +80,10 @@ def health():
 
 if __name__ == '__main__':
     # Run Flask app
-    # Set debug=False in production
+    # DEBUG comes from config/settings.py (set DEBUG=false in .env for production)
     app.run(
-        debug=True,
+        debug=DEBUG,
         host='127.0.0.1',
-        port=5000,
+        port=PORT,
         use_reloader=False
     )

@@ -3,13 +3,15 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import sys
-import io
 from collections import Counter
 
+try:
+    from .utils import ensure_utf8_console
+except ImportError:
+    from utils import ensure_utf8_console
+
 # Fix Windows console crash when running this module directly (emoji prints)
-if (sys.platform == 'win32' and hasattr(sys.stdout, 'buffer')
-        and 'utf-8' not in (getattr(sys.stdout, 'encoding', '') or '').lower()):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+ensure_utf8_console()
 
 
 class SimilarityMatcher:

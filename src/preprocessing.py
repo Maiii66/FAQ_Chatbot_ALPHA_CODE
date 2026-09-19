@@ -3,13 +3,14 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 import re
-import sys
-import io
+
+try:
+    from .utils import ensure_utf8_console
+except ImportError:
+    from utils import ensure_utf8_console
 
 # Fix Windows console crash when running this module directly (emoji prints)
-if (sys.platform == 'win32' and hasattr(sys.stdout, 'buffer')
-        and 'utf-8' not in (getattr(sys.stdout, 'encoding', '') or '').lower()):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+ensure_utf8_console()
 
 # Map everyday user vocabulary to the words used in the FAQ questions.
 # Applied identically to both FAQ rows and user input, so the two now line up.
