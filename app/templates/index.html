@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏋️ Gym FAQ Chatbot</title>
+    <meta name="theme-color" content="#0B1426">
+    <meta name="description" content="FitZone Gym Assistant - ask about timings, membership plans, classes and facilities.">
+    <title>FitZone Gym Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="chatbot-header">
-            <div class="header-content">
-                <h1>🏋️ Gym FAQ Assistant</h1>
-                <p>Ask me anything about memberships, facilities, and services!</p>
-            </div>
-        </div>
-        
-        <!-- Chat Box -->
-        <div class="chat-box" id="chatBox">
-            <div class="message bot-message">
-                <div class="message-content">
-                    👋 Welcome to Gym FAQ Chatbot! Ask me anything about our gym.
+    <div class="app">
+
+        <header class="chat-header">
+            <div class="header-main">
+                <div class="avatar avatar--bot" aria-hidden="true">🤖</div>
+                <div class="header-text">
+                    <h1>FitZone Gym Assistant</h1>
+                    <p>Memberships &middot; Timings &middot; Classes &middot; Facilities</p>
                 </div>
-                <div class="message-meta">Category: General</div>
             </div>
-        </div>
-        
-        <!-- Input Area -->
-        <div class="input-area">
-            <input 
-                type="text" 
-                id="userInput" 
-                class="user-input"
-                placeholder="Ask me a question... e.g., 'What are your gym timings?'"
-                autocomplete="off"
-            >
-            <button class="send-btn" onclick="sendMessage()" id="sendBtn">
-                <span>Send</span>
-                <span class="send-icon">➤</span>
+            <span class="header-accent" aria-hidden="true"></span>
+        </header>
+
+        <main
+            class="chat-scroll"
+            id="chatScroll"
+            role="log"
+            aria-live="polite"
+            aria-relevant="additions text"
+            aria-label="Chat conversation"
+            aria-busy="false"
+        >
+            <div class="messages" id="chatBox"></div>
+
+            <div class="message message--typing" id="typingIndicator" hidden>
+                <div class="avatar avatar--bot" aria-hidden="true">🤖</div>
+                <div class="bubble typing-dots" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </main>
+
+        <section class="suggestions" aria-label="Suggested questions">
+            <h2 class="sr-only">Quick suggestions</h2>
+            <button type="button" class="chip" data-question="What are your gym timings?">
+                <span class="chip__icon" aria-hidden="true">🕒</span>Timings
             </button>
-        </div>
-        
-        <!-- Typing Indicator -->
-        <div class="typing-indicator" id="typingIndicator" style="display: none;">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+            <button type="button" class="chip" data-question="What are your membership plans?">
+                <span class="chip__icon" aria-hidden="true">💳</span>Plans
+            </button>
+            <button type="button" class="chip" data-question="What group classes do you offer?">
+                <span class="chip__icon" aria-hidden="true">🎯</span>Classes
+            </button>
+            <button type="button" class="chip" data-question="What equipment do you have?">
+                <span class="chip__icon" aria-hidden="true">🏋️</span>Facilities
+            </button>
+        </section>
+
+        <div class="error-banner" id="errorBanner" role="alert" hidden></div>
+
+        <footer class="input-area">
+            <div class="input-row">
+                <label class="sr-only" for="userInput">Ask a question</label>
+                <input
+                    type="text"
+                    id="userInput"
+                    class="user-input"
+                    placeholder="Type your question…"
+                    autocomplete="off"
+                    maxlength="500"
+                    aria-label="Ask a question"
+                >
+                <button type="button" class="send-btn" id="sendBtn" aria-label="Send message">
+                    <span class="send-btn__label">Send</span>
+                    <svg class="send-btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                        <path d="M22 2 11 13"></path>
+                    </svg>
+                </button>
+            </div>
+            <p class="keyboard-hint" id="keyboardHint">Press <kbd>Enter</kbd> to send</p>
+        </footer>
+
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
